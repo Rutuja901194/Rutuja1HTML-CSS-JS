@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registation Form</title>
+ 
+    <style>body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: aliceblue;
+}
+form{
+    max-width: 400px;
+    background: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+input,select{
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    background-color:darkgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: forestgreen;
+}
+
+</style>
+</head>
+<body>
+    <h2>Student Registation </h2>
+    <form action="submit.html" method="post">
+        <label> Frist Name: </label>
+        <input type="text" name="First Name" required>
+
+        <label>Middle Name </label>
+        <input type="text" name="Middle Name" required>
+        
+        <label>Last Name </label>
+        <input type="text" name="Last Name" required>
+
+        <label>Email: </label>
+        <input type="email" name="email" required>
+
+        <label> Gender: </label>
+        <input type="radio" name="Gender" value="Male">Male  <br>
+        <input type="radio" name="Gender" value="Female">Female <br> 
+        <input type="radio" name="Gender" value="Male">3rd gen <br>
+        <br>
+        <br>
+        <label>Mobile No.: </label>
+        <input type="tel" name="Mobile" pattern="[0-9]{10}"required>
+
+        <label>DOB: </label>
+         <input type="date" name="DOB"required>
+
+         <label>Coures</label>
+         <select name="Coures">
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>B.SC</option>
+         </select>
+        
+         <label>Uplode Photo</label>
+         <input type="file" name="Photo" accept="images/">
+         <br><br>
+         <input type="submit" value="Register">
+        </form>
+</body>
+</html>
